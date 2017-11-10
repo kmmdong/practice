@@ -6,7 +6,7 @@
   <meta name="mobile-web-app-capable" content="yes">
   <link rel="stylesheet" href="style.css">
 </head>
-<body onload="splash(1000)">
+<body onload="splash(1600)">
 <div id=splashscreen>
 </div>
 
@@ -14,7 +14,7 @@
 <script>
   function splash(param) {
     setTimeout(function () {
-      $('#splashscreen').fadeOut(function () {
+      $('#splashscreen').fadeOut('fast', function () {
         $(location).attr('href','http://localhost:3000/');
       })
     }, param);
